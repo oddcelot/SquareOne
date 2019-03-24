@@ -16,7 +16,14 @@ const generateHTMLPlugins = () =>
         {
           template: dir, // Input
           filename: path.basename(dir).replace('.twig', '.html'), // Output
-          options: { minimize: true }
+          minify: {
+            collapseWhitespace: true,
+            removeComments: true,
+            removeRedundantAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            useShortDoctype: true
+          },
         },
         // add vars for templates
         templateVars.pageTemplate = path.basename(dir)
