@@ -1,0 +1,26 @@
+image: node:8
+
+cache:
+  paths:
+  - node_modules/
+
+stages:
+- build
+- ship
+
+compile:
+  stage: build
+  script:
+  - yarn reset
+  - yarn build:production
+  artifacts:
+    paths:
+    - dist
+
+pages:
+  stage: ship
+  script:
+  - mv dist public
+  artifacts:
+    paths:
+    - public

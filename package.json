@@ -9,19 +9,22 @@
   "homepage": "",
   "scripts": {
     "setup": "yarn install",
-    "clean": "rm -rf node_modules package-lock.json yarn-lock.json",
+    "clean": "rm -rf dist package-lock.json yarn-lock.json",
     "reset": "yarn run clean && yarn run setup",
     "dev": "webpack-dev-server --mode development",
-    "production": "rm -rf dist && webpack --mode production"
+    "prod:build": "rm -rf dist && webpack --mode production",
+    "prod:watch": "yarn prod:build -- --watch"
   },
   "devDependencies": {
-    "twig-loader": "^0.4.1",
+    "copy-webpack-plugin": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^2.0.0",
     "twig-html-loader": "^0.1.5",
+    "twig-loader": "^0.4.1",
     "webpack": "^4.29.6",
-    "raw-loader":"^2.0.0",
     "webpack-cli": "^3.3.0",
-    "html-webpack-plugin":"^3.2.0",
-    "webpack-dev-server":"^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "chalk": "^2.4.2",

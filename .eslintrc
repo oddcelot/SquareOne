@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "extends": ["standard", "plugin:import/errors", "plugin:import/warnings"],
+  "plugins": ["import"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "codeFrame": false,
+    "ecmaVersion": 6
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "WEBPACKER_DEV": true,
+    "WEBPACKER_PROD": true
+  },
+  "rules": {
+    "arrow-parens": 0,
+    "generator-star-spacing": 0,
+    "no-debugger": 0,
+    "no-new": 0
+  },
+  "settings": {
+    "polyfills": ["promises", "intersectionobserver"]
+  }
+}
