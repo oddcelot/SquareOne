@@ -1,4 +1,21 @@
-#
+# ![□1][logo] <br> SquareOne
+
+## What is this madness?
+
+Well, it's some kind of starting point for a project, where you are basically starting from square one. Hence the name 😉
+
+## Goodies
+
+You may ask "What's in the Box?" and here are some insufficient answers:
+
+- `.vscode` settings and extension suggentions to get yu started
+- `webpack` config for processing `scss`, `twig`, `js` and various assets
+  - *assets:* `svg` sprite generator
+- a solid `scss` starter which is split
+- code quality galore: `stylelint`, `eslint`
+- `twig` is templating language of choice (easier integration in Sylius and Grav)
+
+All those components are highly customizable, because nothing is hidden away. So explore its contents make it your own ☝️.
 
 ## Other Stuff
 
@@ -33,3 +50,9 @@ Some great inspiration (especially regarding implementation and option selection
 - [We use too many damn modals. Let's just not.](https://modalzmodalzmodalz.com/#content)
 - [9 amazing PWA secrets](https://www.creativebloq.com/features/9-amazing-pwa-secrets)
 - [GRID: A simple visual cheatsheet for CSS Grid Layout](http://grid.malven.co)
+
+
+[logo]:./webpack/config/assets/□1.svg "□1"
+<style>
+img {width: 100px}
+</style>
