@@ -2,7 +2,8 @@
 
 ## What is this madness?
 
-Well, it's some kind of starting point for a project, where you are basically starting from square one. Hence the name 😉
+Well, it's some kind of starting point for a project, where you are basically
+starting from square one. Hence the name 😉
 
 ## Goodies
 
@@ -10,18 +11,21 @@ You may ask "What's in the Box?" and here are some insufficient answers:
 
 - `.vscode` settings and extension suggentions to get yu started
 - `webpack` config for processing `scss`, `twig`, `js` and various assets
-  - *assets:* `svg` sprite generator
+  - _assets:_ `svg` sprite generator
 - a solid `scss` starter which is split
 - code quality galore: `stylelint`, `eslint`
-- `twig` is templating language of choice ( easier integration in Sylius and Grav, plus it has pretty low frustration potential )
+- `twig` is templating language of choice ( easier integration in Sylius and
+  Grav, plus it has pretty low frustration potential )
 
-All those components are highly customizable, because nothing is hidden away. So explore its contents make it your own ☝️.
+All those components are highly customizable, because nothing is hidden away. So
+explore its contents make it your own ☝️.
 
 ## Other Stuff
 
 ### Thanks
 
-Some great inspiration (especially regarding implementation and option selection) was drawn from these Repositories:
+Some great inspiration (especially regarding implementation and option
+selection) was drawn from these Repositories:
 
 - [Pangolin](https://github.com/pangolinjs)
 - [Webpacker Plugin for Grav CMS](https://github.com/jimblue/grav-plugin-webpacker)

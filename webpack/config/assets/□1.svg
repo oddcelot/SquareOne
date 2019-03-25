@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.47 192.47"><defs><style>.cls-1{fill:none;stroke:#010101;stroke-miterlimit:10;stroke-width:13.58px;}</style></defs><title>Element 1</title><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><rect class="cls-1" x="6.79" y="6.79" width="178.89" height="178.89"/><polyline class="cls-1" points="97.83 78.66 128.13 60.34 132.96 60.34 132.84 156.31 98.7 156.31 162.96 156.31"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.47 192.47">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#010101;stroke-miterlimit:10;stroke-width:13.58px;}
+        </style>
+    </defs>
+    <title>
+        Element 1
+    </title>
+    <g id="Ebene_2" data-name="Ebene 2">
+        <g id="Ebene_1-2" data-name="Ebene 1">
+            <rect width="178.89" height="178.89" x="6.79" y="6.79" class="cls-1"/>
+            <polyline points="97.83 78.66 128.13 60.34 132.96 60.34 132.84 156.31 98.7 156.31 162.96 156.31" class="cls-1"/>
+        </g>
+    </g>
+</svg>

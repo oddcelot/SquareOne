@@ -1,14 +1,14 @@
 //
-const path = require('path')
-const merge = require('webpack-merge')
+const path = require('path');
+const merge = require('webpack-merge');
 
-const assetConfig = require('./config/assetConfig')
-const templateConfig = require('./config/templateConfig')
-const styleConfig = require('./config/styleConfig')
-const metaConfig = require('./config/metaConfig')
+const assetConfig = require('./config/assetConfig');
+const templateConfig = require('./config/templateConfig');
+const styleConfig = require('./config/styleConfig');
+const metaConfig = require('./config/metaConfig');
 
-var SRC_DIR = path.resolve(__dirname, '../src')
-var BUILD_DIR = path.resolve(__dirname, '../dist')
+var SRC_DIR = path.resolve(__dirname, '../src');
+var BUILD_DIR = path.resolve(__dirname, '../dist');
 
 module.exports = {
   entry: {
@@ -38,4 +38,4 @@ module.exports = {
     port: process.env.PORT || 9000,
     host: process.env.HOST || 'localhost'
   }
-}
+};

@@ -2,6 +2,9 @@
   "emmet.includeLanguages": {
     "twig": "html"
   },
+  "files.associations": {
+    "*.html": "twig"
+  },
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

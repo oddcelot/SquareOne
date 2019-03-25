@@ -1,13 +1,13 @@
 // Webpack
-const webpack = require('webpack')
+const webpack = require('webpack');
 
 // Tools libraries
-const path = require('path')
-const glob = require('glob')
+const path = require('path');
+const glob = require('glob');
 
 // Plugins libraries
-const HTMLWebpackPlugin = require('html-webpack-plugin')
-const templateVars = require('../../src/templateVars.js')
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const templateVars = require('../../src/templateVars.js');
 
 const generateHTMLPlugins = () =>
   glob.sync('./src/pages/**/*.twig').map(
@@ -23,13 +23,13 @@ const generateHTMLPlugins = () =>
             removeScriptTypeAttributes: true,
             removeStyleLinkTypeAttributes: true,
             useShortDoctype: true
-          },
+          }
         },
         // add vars for templates
-        templateVars.pageTemplate = path.basename(dir)
+        (templateVars.pageTemplate = path.basename(dir))
       )
-    )
-  
+  );
+
 templateVars.env = process.env.NODE_ENV;
 
 const config = {
@@ -42,7 +42,7 @@ const config = {
           loader: 'twig-html-loader',
           options: {
             namespaces: {
-              pages:'./src/pages',
+              pages: './src/pages',
               layouts: './src/layouts',
               partials: './src/partials',
               components: './src/components'
@@ -54,6 +54,6 @@ const config = {
     }
   ],
   plugins: [...generateHTMLPlugins()]
-}
+};
 
-module.exports = config
+module.exports = config;

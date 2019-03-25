@@ -3,69 +3,63 @@
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
 <!--
-  Allows control over where resources are loaded from.
-  Place as early in the <head> as possible, as the tag  
-  only applies to resources that are declared after it.
--->
+                  Allows control over where resources are loaded from.
+                  Place as early in the <head> as possible, as the tag
+                  only applies to resources that are declared after it.
+                -->
 {% if env is not same as('development') %}
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<meta content="default-src 'self'" http-equiv="Content-Security-Policy" />
 {% endif %}
-
 <!-- Name of web application (only should be used if the website is used as an app) -->
-<meta name="application-name" content="Application Name">
-
+<meta content="Application Name" name="application-name" />
 <!-- Theme Color for Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#4285f4">
-
+<meta content="#4285f4" name="theme-color" />
 <!-- Short description of the document (limit to 150 characters) -->
 <!-- This content *may* be used as a part of search engine results. -->
-<meta name="description" content="A description of the page">
-
+<meta content="A description of the page" name="description" />
 <!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
-
+<meta content="index,follow" name="robots" />
+<!-- All Search Engines -->
+<meta content="index,follow" name="googlebot" />
+<!-- Google Specific -->
 <!-- Tells Google not to show the sitelinks search box -->
-<meta name="google" content="nositelinkssearchbox">
-
+<meta content="nositelinkssearchbox" name="google" />
 <!-- Tells Google not to provide a translation for this document -->
-<meta name="google" content="notranslate">
-
+<meta content="notranslate" name="google" />
 <!-- Verify website ownership -->
-<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
-<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
-<meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
-<meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
-<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
-<meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
-
+<meta content="verification_token" name="google-site-verification" />
+<!-- Google Search Console -->
+<meta content="verification_token" name="yandex-verification" />
+<!-- Yandex Webmasters -->
+<meta content="verification_token" name="msvalidate.01" />
+<!-- Bing Webmaster Center -->
+<meta content="verification_token" name="alexaVerifyID" />
+<!-- Alexa Console -->
+<meta content="code_from_pinterest" name="p:domain_verify" />
+<!-- Pinterest Console-->
+<meta content="norton_code" name="norton-safeweb-site-verification" />
+<!-- Norton Safe Web -->
 <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
-<meta name="generator" content="program">
-
+<meta content="program" name="generator" />
 <!-- Short description of your document's subject -->
-<meta name="subject" content="your document's subject">
-
+<meta content="your document's subject" name="subject" />
 <!-- Gives a general age rating based on the document's content -->
-<meta name="rating" content="General">
-
+<meta content="General" name="rating" />
 <!-- Allows control over how referrer information is passed -->
-<meta name="referrer" content="no-referrer">
-
+<meta content="no-referrer" name="referrer" />
 <!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=no">
-
+<meta content="telephone=no" name="format-detection" />
 <!-- Completely opt out of DNS prefetching by setting to "off" -->
-<meta http-equiv="x-dns-prefetch-control" content="off">
-
+<meta content="off" http-equiv="x-dns-prefetch-control" />
 <!-- Specifies the document to appear in a specific frame -->
-<meta http-equiv="Window-Target" content="_value">
-
+<meta content="_value" http-equiv="Window-Target" />
 <!-- Geo tags -->
-<meta name="ICBM" content="latitude, longitude">
-<meta name="geo.position" content="latitude;longitude">
-<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+<meta content="latitude, longitude" name="ICBM" />
+<meta content="latitude;longitude" name="geo.position" />
+<meta content="country[-state]" name="geo.region" />
+<!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<meta content="city/town" name="geo.placename" />
+<!-- eg. content="New York City" -->

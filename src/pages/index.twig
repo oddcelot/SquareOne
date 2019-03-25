@@ -1,9 +1,8 @@
-{% extends "layouts::common.twig" %}
-{% block title %}
-    <svg class="icon">
-        <use xlink:href="../assets/spritemap.svg#sprite-css3"></use>
-    </svg>
-    <img class="icon" src="./assets/logo.svg"/>
-    {% set vars = {'foo': 'bar'} %}
-    <h2>{% include 'components::greeting.twig' with vars %}</h2>
+{% extends "layouts::common.twig" %} {% block title %}
+<svg class="icon">
+  <use xlink:href="../assets/spritemap.svg#sprite-css3"></use>
+</svg>
+<img class="icon" src="./assets/logo.svg" />
+{% set vars = {'foo': 'bar'} %}
+<h2>{% include 'components::greeting.twig' with vars %}</h2>
 {% endblock %}

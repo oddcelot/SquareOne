@@ -1,18 +1,19 @@
 {
   "recommendations": [
-      "shinnn.stylelint",
-      "EditorConfig.EditorConfig",
-      "dbaeumer.vscode-eslint",
-      "mikestead.dotenv",
-      "esbenp.prettier-vscode",
-      "mgmcdermott.vscode-language-babel",
-      "eg2.vscode-npm-script",
-      "christian-kohler.npm-intellisense",
-      "christian-kohler.path-intellisense",
-      "sibiraj-s.vscode-scss-formatter",
-      "mrmlnc.vscode-scss",
-      "mblode.twig-language-2",
-      "visualstudioexptteam.vscodeintellicode",
-      "gamunu.vscode-yarn"
+    "shinnn.stylelint",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "mikestead.dotenv",
+    "esbenp.prettier-vscode",
+    "mgmcdermott.vscode-language-babel",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "sibiraj-s.vscode-scss-formatter",
+    "mrmlnc.vscode-scss",
+    "mblode.twig-language",
+    "mblode.twig-language-2",
+    "visualstudioexptteam.vscodeintellicode",
+    "gamunu.vscode-yarn"
   ]
 }

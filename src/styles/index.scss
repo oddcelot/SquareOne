@@ -1,32 +1,31 @@
 $bg: rebeccapurple;
 
 body {
-    background: $bg;
+  background: $bg;
 }
 
 .text * {
-    color: green;
+  color: green;
 }
 
-@import 'sprites';
+@import "sprites";
 
 .icon {
-    width: 100px;
-    height: 125px;
+  width: 100px;
+  height: 125px;
 
+  use {
+    fill: currentColor;
+  }
+
+  path {
+    fill: inherit;
+  }
+
+  &--outline {
     use {
-        fill: currentColor;
+      fill: none;
+      stroke: currentColor;
     }
-
-    path {
-        fill: inherit;
-    }
-
-    &--outline {
-
-        use {
-            fill: none;
-            stroke: currentColor;
-        }
-    }
+  }
 }

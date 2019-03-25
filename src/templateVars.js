@@ -1,5 +1,5 @@
 const vars = {
-  title: 'asas',
-}
+  title: 'asas'
+};
 
-module.exports = vars
+module.exports = vars;

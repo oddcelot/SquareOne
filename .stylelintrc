@@ -1,7 +1,7 @@
 {
     "extends": "stylelint-config-recommended",
     "rules": {
-        "indentation": 4,
+        "indentation": 2,
         "string-quotes": "single",
         "color-hex-case": "lower",
         "color-hex-length": "long",

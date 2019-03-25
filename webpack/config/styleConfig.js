@@ -1,13 +1,13 @@
 // Webpack
-const webpack = require('webpack')
+const webpack = require('webpack');
 
 // Tools libraries
 
 // Plugins libraries
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const Fiber = require('fibers')
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Fiber = require('fibers');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 
 const config = {
   rules: [
@@ -54,7 +54,8 @@ const config = {
       chunkFilename: '[id].css'
     }),
     new OptimizeCssAssetsPlugin({
-      assetNameRegExp: process.env.NODE_ENV !== 'production' ? /\.cs$/ : /\.css$/g,
+      assetNameRegExp:
+        process.env.NODE_ENV !== 'production' ? /\.cs$/ : /\.css$/g,
       cssProcessor: require('cssnano'),
       cssProcessorPluginOptions: {
         preset: ['default', { discardComments: { removeAll: true } }]
@@ -63,6 +64,6 @@ const config = {
     }),
     new FixStyleOnlyEntriesPlugin()
   ]
-}
+};
 
-module.exports = config
+module.exports = config;
