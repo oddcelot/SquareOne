@@ -6,12 +6,20 @@ const path = require('path')
 
 // Plugins libraries
 const CopyPlugin = require('copy-webpack-plugin')
+const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin')
 
 const config = {
-    plugins: [
-        new CopyPlugin([{ from: './src/assets', to: 'assets' }])
-    ]
-  }
+  rules: [],
+  plugins: [
+    new SVGSpritemapPlugin('src/assets/svg-sprite/**/*.svg', {
+        output: {
+            filename: 'assets/spritemap.svg',
+            svgo: true,
+      },
+      styles: './src/styles/_sprites.scss'
+    }),
+    new CopyPlugin([{ from: './src/assets', to: 'assets' }])
+  ]
+}
 
-module.exports = config;
-
+module.exports = config

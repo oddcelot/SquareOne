@@ -3,3 +3,23 @@ $bg: rebeccapurple;
 body {
   background: $bg;
 }
+
+@import "sprites";
+
+.icon {
+  width: 100px;
+  height: 125px;
+  use {
+    fill: currentColor;
+  }
+  path {
+    fill: inherit;
+  }
+
+  &--outline {
+    use {
+      fill: none;
+      stroke: currentColor;
+    }
+  }
+}

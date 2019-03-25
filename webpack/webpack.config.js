@@ -13,6 +13,7 @@ module.exports = {
     fs: 'empty'
   },
   entry: {
+    main: './src/index.js',
     style: './src/styles/index.scss'
   },
   output: {
@@ -22,7 +23,7 @@ module.exports = {
     rules: merge(templateConfig, styleConfig).rules
   },
   plugins: merge(assetConfig, templateConfig, styleConfig).plugins,
-  devtool: process.env.NODE_ENV !== 'production' ? 'source-map': 'eval',
+  devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : 'eval',
   devServer: {
     open: false,
     port: process.env.PORT || 9000,
