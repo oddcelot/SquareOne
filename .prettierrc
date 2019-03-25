@@ -4,9 +4,8 @@
   "useTabs": false,
   "semi": false,
   "singleQuote": true,
-  "trailingComma": "none",
+  "trailingComma": "all",
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
-  "arrowParens": "avoid",
-  "parser": "babylon"
+  "arrowParens": "avoid"
 }

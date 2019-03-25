@@ -1,0 +1,13 @@
+{
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": false,
+  "editor.formatOnSave": true
+}
