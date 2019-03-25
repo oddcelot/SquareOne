@@ -7,11 +7,13 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Fiber = require('fibers')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries')
 
 const config = {
   rules: [
     {
       test: /\.(sa|sc|c)ss$/,
+      exclude: /node_modules/,
       use: [
         {
           loader: MiniCssExtractPlugin.loader,
@@ -19,13 +21,22 @@ const config = {
             sourceMap: process.env.NODE_ENV !== 'production'
           }
         },
+
         {
           loader: 'css-loader',
           options: {
             sourceMap: process.env.NODE_ENV !== 'production',
+            importLoaders: 1
           }
         },
-
+        {
+          loader: 'postcss-loader',
+          options: {
+            config: {
+              path: `${__dirname}/postcss.config.js`
+            }
+          }
+        },
         {
           loader: 'sass-loader',
           options: {
@@ -43,13 +54,14 @@ const config = {
       chunkFilename: '[id].css'
     }),
     new OptimizeCssAssetsPlugin({
-        assetNameRegExp: /\.css$/g,
-        cssProcessor: require('cssnano'),
-        cssProcessorPluginOptions: {
-          preset: ['default', { discardComments: { removeAll: true } }],
-        },
-        canPrint: true
-      })
+      assetNameRegExp: process.env.NODE_ENV !== 'production' ? /\.cs$/ : /\.css$/g,
+      cssProcessor: require('cssnano'),
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }]
+      },
+      canPrint: true
+    }),
+    new FixStyleOnlyEntriesPlugin()
   ]
 }
 
