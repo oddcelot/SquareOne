@@ -28,7 +28,9 @@ const generateHTMLPlugins = () =>
         // add vars for templates
         templateVars.pageTemplate = path.basename(dir)
       )
-  )
+    )
+  
+templateVars.env = process.env.NODE_ENV;
 
 const config = {
   rules: [

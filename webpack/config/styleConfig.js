@@ -21,7 +21,6 @@ const config = {
             sourceMap: process.env.NODE_ENV !== 'production'
           }
         },
-
         {
           loader: 'css-loader',
           options: {
@@ -32,6 +31,7 @@ const config = {
         {
           loader: 'postcss-loader',
           options: {
+            sourceMap: process.env.NODE_ENV !== 'production',
             config: {
               path: `${__dirname}/postcss.config.js`
             }
