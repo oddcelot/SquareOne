@@ -1,10 +1,11 @@
 {
-  "emmet.includeLanguages": {
-    "twig": "html"
-  },
   "files.associations": {
     "*.html": "twig"
   },
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+  "html.format.preserveNewLines": true,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
@@ -12,5 +13,7 @@
   "prettier.stylelintIntegration": true,
   "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code Retina, Fira Code , Menlo, Monaco, 'Courier New', monospace"
 }

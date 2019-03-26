@@ -1,14 +1,19 @@
 $bg: rebeccapurple;
 
+:root {
+  --color-bg: rebeccapurple;
+}
+
 body {
-  background: $bg;
+  --color-bg: green;
+  background: var(--color-bg);
 }
 
 .text * {
-  color: green;
+  color: $bg;
 }
 
-@import "sprites";
+@import 'sprites';
 
 .icon {
   width: 100px;

@@ -26,15 +26,12 @@ module.exports = {
 
   devServer: {
     bonjour: true,
-    hot: true,
     overlay: true,
-    contentBase: '.',
-    disableHostCheck: true,
     stats: {
       all: false
     },
 
-    open: false,
+    open: true,
     port: process.env.PORT || 9000,
     host: process.env.HOST || 'localhost'
   }
