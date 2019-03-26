@@ -1,3 +1,14 @@
+# Supported browsers
+# https://github.com/ai/browserslist
+
+[modern]
+Chrome >= 58
+Edge >= 15
+Firefox >= 53
+iOS >= 10.1
+
+[legacy]
 > 0.25%
 IE 11
 not op_mini all
+not dead

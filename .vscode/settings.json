@@ -5,6 +5,7 @@
   "emmet.includeLanguages": {
     "twig": "html"
   },
+
   "html.format.preserveNewLines": true,
   "css.validate": false,
   "less.validate": false,
@@ -12,6 +13,7 @@
   "stylelint.enable": true,
   "prettier.stylelintIntegration": true,
   "prettier.eslintIntegration": true,
+  "prettier.trailingComma": "all",
   "eslint.autoFixOnSave": false,
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,

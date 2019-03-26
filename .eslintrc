@@ -9,13 +9,6 @@
     "codeFrame": false,
     "ecmaVersion": 6
   },
-  "env": {
-    "browser": true
-  },
-  "globals": {
-    "WEBPACKER_DEV": true,
-    "WEBPACKER_PROD": true
-  },
   "rules": {
     "arrow-parens": 0,
     "generator-star-spacing": 0,

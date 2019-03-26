@@ -8,14 +8,15 @@
   "bugs": "https://github.com/oddcelot/SquareOne/issues",
   "homepage": "https://github.com/oddcelot/SquareOne",
   "scripts": {
+    "check:npm-updates": "ncu",
     "setup": "yarn install",
     "clean": "rm -rf dist package-lock.json yarn-lock.json",
     "reset": "yarn run clean && yarn run setup",
     "dev": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --config webpack/webpack.config.js --mode development",
     "prod:build": "rm -rf dist && cross-env NODE_ENV=production webpack --config webpack/webpack.config.js --mode production",
     "prod:watch": "yarn prod:build -- --watch",
-    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
-    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
+    "fix:scripts": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
+    "fix:styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
   },
   "devDependencies": {
     "autoprefixer": "^9.5.0",
@@ -27,7 +28,9 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
+    "node-notifier": "^5.4.0",
     "node-sass": "^4.11.0",
+    "npm-check-updates": "^3.1.2",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss": "^7.0.14",
     "postcss-loader": "^3.0.0",
@@ -41,7 +44,6 @@
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-declaration-use-variable": "^1.7.0",
     "stylelint-value-no-unknown-custom-properties": "^2.0.0",
-    "stylelint-webpack-plugin": "^0.10.5",
     "svg-spritemap-webpack-plugin": "^3.2.2",
     "twig-html-loader": "^0.1.5",
     "webpack": "^4.29.6",
@@ -53,10 +55,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "node-notifier": "^5.4.0",
-    "npm-check-updates": "^3.1.1",
-    "ora": "^3.2.0",
     "svg4everybody": "^2.1.9"
   }
 }
