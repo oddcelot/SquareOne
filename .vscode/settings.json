@@ -5,8 +5,6 @@
   "emmet.includeLanguages": {
     "twig": "html"
   },
-
-  "html.format.preserveNewLines": true,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

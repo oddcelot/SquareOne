@@ -1,0 +1,33 @@
+@mixin slide-in(
+  $slide-axis: x,
+  $slide-offset: -100px,
+  $animation-properties: 3s ease-out
+) {
+  $slide-start: if(
+    $slide-axis == x,
+    translateX($slide-offset),
+    translateY($slide-offset)
+  );
+  $slide-end: if($slide-axis == x, translateX(0), translateY(0));
+
+  @include keyframes(slide-in-#{$slide-axis}-#{$slide-offset}) {
+    0% {
+      @include opacity(0);
+      @include transform($slide-start);
+    }
+
+    75% {
+      @include transform($slide-end);
+    }
+
+    100% {
+      @include opacity(1);
+    }
+  }
+
+  @include prefix(
+    animation,
+    slide-in-#{$slide-axis}-#{$slide-offset} $animation-properties,
+    'webkit'
+  );
+}

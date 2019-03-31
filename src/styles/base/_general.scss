@@ -1,0 +1,82 @@
+@include font-face('BellMT', '/BellMT/BellMT-Regular', normal, normal);
+@include font-face(
+  'BrandonGrotesque',
+  '/BrandonGrotesque/BrandonGrotesque-Regular',
+  normal,
+  normal
+);
+@include font-face(
+  'BrandonGrotesque',
+  '/BrandonGrotesque/BrandonGrotesque-Black',
+  bold,
+  normal
+);
+
+// general project styling
+:root {
+  @include css-vars(color, $colors);
+}
+
+* {
+  &::selection {
+    background: transparentize(map-get($colors, brand), 0.006);
+    color: var(--color-background);
+  }
+
+  &::placeholder {
+    color: var(--color-background);
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  @extend %font-serif;
+  color: var(--color-secondary);
+  line-height: 1.25;
+}
+
+main {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brand);
+  position: relative;
+  transition: $base-timing;
+
+  > * {
+    transition: $base-timing;
+  }
+
+  &:hover > * {
+    color: var(--color-brand);
+  }
+}
+
+p {
+  > a {
+    @extend %link;
+  }
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+}

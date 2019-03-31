@@ -7,9 +7,10 @@
   "rules": {
     "indentation": 2,
     "string-quotes": "single",
+    "block-no-empty": null,
     "color-hex-case": "lower",
     "color-hex-length": "long",
-    "csstools/value-no-unknown-custom-properties": true,
+    "csstools/value-no-unknown-custom-properties": false,
     "selector-no-qualifying-type": true,
     "selector-combinator-space-after": "always",
     "selector-attribute-quotes": "always",
@@ -26,6 +27,12 @@
     "font-family-name-quotes": "always-unless-keyword",
     "comment-whitespace-inside": "always",
     "comment-empty-line-before": "always",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["include","mixin","extend","function","if","for","else","warn","error","return","each"]
+      }
+    ],
     "at-rule-no-vendor-prefix": true,
     "rule-empty-line-before": [
       "always-multi-line",

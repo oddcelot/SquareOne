@@ -1,0 +1,7 @@
+{% set class = 'button' %}
+{% if not link %}
+    {% set link = '#' %}
+{% endif %}
+<a class="{{ class }} {% for modifier in modifiers %} {{ class }}--{{ modifier }} {% endfor %}" href="{{ link }}">{{ text }}</a>
+
+{{ test }}

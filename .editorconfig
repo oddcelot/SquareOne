@@ -11,3 +11,6 @@ indent_size = 2
 
 [*.{js,jsx}]
 indent_size = 4
+
+[*.twig]
+indent_size = 0

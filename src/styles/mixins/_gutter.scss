@@ -1,0 +1,15 @@
+@mixin gutter($space: 1rem, $suffix-name: none) {
+  $suffix: '' !default;
+
+  @if ($suffix-name != none) {
+    $suffix: -#{$suffix-name};
+  }
+
+  &--gutter#{$suffix} {
+    margin: -$space;
+
+    & > * {
+      padding: $space;
+    }
+  }
+}

@@ -9,5 +9,14 @@
   "trailingComma": "none",
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
-  "semi": true
+  "semi": true,
+  "overrides": [
+    {
+      "files": "*.twig",
+      "options": {
+        "editor.formatOnSave": false,
+        "tabWidth": 10
+      }
+    }
+  ]
 }

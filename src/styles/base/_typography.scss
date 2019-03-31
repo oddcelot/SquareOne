@@ -1,0 +1,128 @@
+html {
+  --text-size: 16px;
+  font-size: var(--text-size);
+}
+
+body {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %heading;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @include font-smoothing;
+
+  hr {
+    max-width: none;
+  }
+}
+
+h1,
+h2 {
+  font-size: 8rem;
+
+  small {
+    &:first-child {
+      margin-bottom: -11em;
+    }
+
+    &:last-child {
+      margin-top: -1.5em;
+    }
+  }
+
+  .text-center & {
+    display: inline-block;
+  }
+
+  @include media('<=tablet') {
+    font-size: 5rem;
+
+    small {
+      &:first-child {
+        margin-bottom: -7em;
+      }
+
+      &:last-child {
+        margin-top: -1em;
+      }
+    }
+  }
+
+  & + hr {
+    margin-top: -1em;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+
+  small {
+    &:first-child {
+      margin-bottom: -6.5em;
+    }
+  }
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+small,
+.small {
+  @extend %small;
+}
+
+hr {
+  width: 50%;
+  max-width: 8rem;
+  border: 1px solid currentColor;
+  display: block;
+  margin: 1rem 0;
+
+  &.text-center,
+  .text-center & {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+blockquote {
+  position: relative;
+  margin: 0 0 3rem 7rem;
+
+  &:before {
+    content: '”';
+    display: block;
+    position: absolute;
+    left: -7rem;
+    top: -3rem;
+    font-size: 13rem;
+    @extend %font;
+    font-weight: bold;
+    color: var(--color-brand);
+  }
+
+  small {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+}
