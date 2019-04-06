@@ -1,8 +1,12 @@
-{% set class = 'button' %}
+{% set component = 'button' %}
+{% extends 'functions::component.twig' %}
+
 {% if not link %}
-{% set link = '#' %}
+    {% set link = '#' %}
 {% endif %}
-<a class="
-            {{ class }} {% for modifier in modifiers %} {{ class }}--{{ modifier }} {% endfor %}" href="{{ link }}">
-{{ text }}
-</a>
+
+{% block component  %}
+    <a class="{{ class }}" href="{{ link }}">
+        {{ text }}
+    </a>
+{% endblock %}

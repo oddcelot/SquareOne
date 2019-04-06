@@ -1,22 +1,29 @@
-{% extends "layouts::common.twig" %} {% block title %}
-<svg class="icon">
-  <use xlink:href="../assets/spritemap.svg#sprite-css3"></use>
-</svg>
+{% extends "layouts::common.twig" %}
+{% block title %}
+    <svg class="icon">
+        <use xlink:href="../assets/spritemap.svg#sprite-css3"></use>
+    </svg>
 
-{% include 'components::button' with {text: 'hello', modifiers: ['green',
-'big']} %}
 
-<img class="icon" src="./assets/logo.svg" />
-{% set hour = now | date("G") %} {% if hour >= 9 and hour < 17 %}
-<p>Time for cookies!</p>
-{% else %}
-<p>Time to bake more cookies!</p>
-{% endif %} {% macro date_formatted(givenDate) %}
-{{ givenDate | date('jS F Y') }}
-{% endmacro %}
-{{ helpers.givenDate(post.date) }}
-{% set vars = {'foo': 'bar'} %}
-<h2>{% include 'components::greeting.twig' with vars %}</h2>
-<code>{{ source('./src/partials/footer.twig')|escape('html') }}</code>
-<code>{{ source('./src/components/greeting.twig')|escape('html') }}</code>
+    <img class="icon" src="./assets/logo.svg" />
+
+    {% include 'components::button.twig' with {
+      text: 'hello',
+      modifiers: ['green','mean']}
+    %}
+
+    {% set hour = now | date("G") %}
+    {% if hour >= 9 and hour < 17 %}
+        <p>Time for cookies!</p>
+    {% else %}
+        <p>Time to bake more cookies!</p>
+    {% endif %}
+    {% macro date_formatted(givenDate) %}
+        {{ givenDate | date('jS F Y') }}
+    {% endmacro %}
+    {{ helpers.givenDate(post.date) }}
+    {% set vars = {'foo': 'bar'} %}
+    <h2>{% include 'components::greeting.twig' with vars %}</h2>
+    <code>{{ source('./src/partials/footer.twig')|escape('html') }}</code>
+    <code>{{ source('./src/components/greeting.twig')|escape('html') }}</code>
 {% endblock %}

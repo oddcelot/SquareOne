@@ -2,6 +2,9 @@
   "files.associations": {
     "*.html": "twig"
   },
+  "files.associations": {
+    "*.stylelintrc": "json"
+  },
   "emmet.includeLanguages": {
     "twig": "html"
   },

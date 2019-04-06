@@ -2,11 +2,13 @@
   "extends": "stylelint-config-recommended",
   "plugins": [
     "stylelint-declaration-use-variable",
-    "stylelint-value-no-unknown-custom-properties"
+    "stylelint-value-no-unknown-custom-properties",
+    "stylelint-order"
   ],
   "rules": {
     "indentation": 2,
     "string-quotes": "single",
+    "order/properties-alphabetical-order": true,
     "block-no-empty": null,
     "color-hex-case": "lower",
     "color-hex-length": "long",
@@ -30,7 +32,19 @@
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["include","mixin","extend","function","if","for","else","warn","error","return","each"]
+        "ignoreAtRules": [
+          "include",
+          "mixin",
+          "extend",
+          "function",
+          "if",
+          "for",
+          "else",
+          "warn",
+          "error",
+          "return",
+          "each"
+        ]
       }
     ],
     "at-rule-no-vendor-prefix": true,

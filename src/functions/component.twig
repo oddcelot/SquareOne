@@ -1,0 +1,14 @@
+{% macro list(component, modifiers) %}
+    {% set classList = component %}
+
+    {% for modifier in modifiers %}
+        {% set classList = classList ~ ' ' ~ component ~ '--' ~ modifier %}
+    {% endfor %}
+    {{ classList }}
+{% endmacro %}
+
+{% import _self as class %}
+
+{% block component %}
+    {% set class = class.list(component, modifiers) %}
+{% endblock %}

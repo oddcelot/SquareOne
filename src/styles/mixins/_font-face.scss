@@ -1,13 +1,13 @@
 @mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
   @font-face {
     font-family: quote($font-name);
+    font-style: $style;
+    font-weight: $weight;
     src: local(quote($font-name));
     src: url($font-path+$file-name+'.woff2') format('woff2'),
       url($font-path+$file-name+'.woff') format('woff'),
       url($font-path+$file-name+'.eot') format('embedded-opentype'),
       url($font-path+$file-name+'.eot?#iefix') format('embedded-opentype'),
       url($font-path+$file-name+'.ttf') format('truetype');
-    font-weight: $weight;
-    font-style: $style;
   }
 }

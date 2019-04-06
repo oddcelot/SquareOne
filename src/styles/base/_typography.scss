@@ -14,8 +14,8 @@ h4,
 h5,
 h6 {
   @extend %heading;
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   @include font-smoothing;
 
   hr {
@@ -92,11 +92,11 @@ small,
 }
 
 hr {
-  width: 50%;
-  max-width: 8rem;
   border: 1px solid currentColor;
   display: block;
   margin: 1rem 0;
+  max-width: 8rem;
+  width: 50%;
 
   &.text-center,
   .text-center & {
@@ -106,23 +106,23 @@ hr {
 }
 
 blockquote {
-  position: relative;
   margin: 0 0 3rem 7rem;
+  position: relative;
 
   &:before {
+    color: var(--color-brand);
     content: '”';
     display: block;
-    position: absolute;
-    left: -7rem;
-    top: -3rem;
     font-size: 13rem;
-    @extend %font;
     font-weight: bold;
-    color: var(--color-brand);
+    left: -7rem;
+    position: absolute;
+    top: -3rem;
+    @extend %font;
   }
 
   small {
-    margin-top: 1em;
     font-size: 0.8em;
+    margin-top: 1em;
   }
 }

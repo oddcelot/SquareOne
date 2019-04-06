@@ -45,7 +45,8 @@ const config = {
               pages: './src/pages',
               layouts: './src/layouts',
               partials: './src/partials',
-              components: './src/components'
+              components: './src/components',
+              functions: './src/functions'
             },
             data: templateVars
           }

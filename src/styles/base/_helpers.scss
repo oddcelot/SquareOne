@@ -8,45 +8,45 @@
 
 %heading {
   @extend %font;
-  font-weight: bold;
 
   color: var(--color-brand);
-  margin: 0.5em 0;
+  font-weight: bold;
   letter-spacing: -0.035em;
+  margin: 0.5em 0;
   text-transform: uppercase;
 }
 
 %small {
   @extend %font;
+  color: var(--color-secondary);
+  display: block;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.035em;
-  display: block;
-  color: var(--color-secondary);
-  text-transform: uppercase;
   position: relative;
+  text-transform: uppercase;
   @include font-smoothing;
 }
 
 %link {
   &:before {
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 3px;
     background: transparentize(map-get($colors, brand), 0.5);
-    content: '';
-    opacity: 1;
-    transition: $base-timing;
     border-bottom: 2px solid transparent;
+    bottom: -3px;
+    content: '';
+    height: 3px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transition: $base-timing;
+    width: 100%;
   }
 
   &:hover,
   &:focus {
     &:before {
-      height: calc(100% + 6px);
       background: transparentize(map-get($colors, brand), 0.8);
+      height: calc(100% + 6px);
     }
   }
 

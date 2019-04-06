@@ -3,8 +3,8 @@
   @if $pseudo {
     &:before {
       @include pseudo($pos: relative);
-      width: 100%;
       padding-top: $padding;
+      width: 100%;
     }
   } @else {
     padding-top: $padding;

@@ -3572,7 +3572,7 @@ handle-thing@^2.0.0:
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
   integrity sha512-d4sze1JNC454Wdo2fkuyzCr6aHcbL6PGGuFAz0Li/NcOm1tCHGnWDRmJP85dh9IhQErTc2svWFEX5xHIOo//kQ==
 
-handlebars@^4.0.11:
+handlebars@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.1.tgz#6e4e41c18ebe7719ae4d38e5aca3d32fa3dd23d3"
   integrity sha512-3Zhi6C0euYZL5sM0Zcy7lInLXKQ+YLcF/olbN010mzGQ4XVm50JeyBnMqofHh696GrciGruC7kCcApPDJvVgwA==
@@ -4100,10 +4100,10 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-inspectpack@^4.0.0:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/inspectpack/-/inspectpack-4.1.2.tgz#b07dd10f1131c290d2076270470787d61b47097e"
-  integrity sha512-bd0iIr5P2xRMtjQQkPnUYJSNa3mUFYER/2eQOPAoXrWBnZXMeFVAgRt/Dny8XVdSkkFoNKhumPjjV9QgTDcVxQ==
+inspectpack@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/inspectpack/-/inspectpack-4.2.1.tgz#8e1893feb5293458c9d587cb2a8ec70be2e79dd4"
+  integrity sha512-3kraYZ9tfxNYXzBsRTNvluj1oJKlJ6wkD+TZ6Vk9CNI1SZcQ5H/9yskuq1Yzha1Cn/wEX/Qw+g+tSLIP5iGXhg==
   dependencies:
     chalk "^2.4.0"
     io-ts "^1.0.5"
@@ -4611,7 +4611,7 @@ jju@^1.1.0:
   resolved "https://registry.yarnpkg.com/jju/-/jju-1.4.0.tgz#a3abe2718af241a2b2904f84a625970f389ae32a"
   integrity sha1-o6vicYryQaKykE+EpiWXDzia4yo=
 
-joi@^14.3.0:
+joi@^14.3.1:
   version "14.3.1"
   resolved "https://registry.yarnpkg.com/joi/-/joi-14.3.1.tgz#164a262ec0b855466e0c35eea2a885ae8b6c703c"
   integrity sha512-LQDdM+pkOrpAn4Lp+neNIFV3axv1Vna3j38bisbQhETPMANYRbFJFUyOZcOClYvM/hppMhGWuKSFEK9vjrB+bQ==
@@ -5389,7 +5389,7 @@ mini-css-extract-plugin@^0.5.0:
     schema-utils "^1.0.0"
     webpack-sources "^1.1.0"
 
-mini-svg-data-uri@^1.0.2:
+mini-svg-data-uri@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.0.3.tgz#f8bb0d7afbf3de29152aadd0f47701197ceab4a3"
   integrity sha512-YBaqsh6GE+4jQhLNkFYEagH2o4bVTlGGpEvkuwtwc+1NBGXqpcVCnsUGkGp75ovPXxtF2GsDYzUwyhfC0hntiA==
@@ -5796,10 +5796,10 @@ npm-bundled@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.6.tgz#e7ba9aadcef962bb61248f91721cd932b3fe6bdd"
   integrity sha512-8/JCaftHwbd//k6y2rEWp6k1wxVfpFzB6t1p825+cUb7Ym2XQfhwIC5KwhrvzZRJu+LtDE585zVaS32+CGtf0g==
 
-npm-check-updates@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-3.1.2.tgz#447b6ccdc460b863190d43dc2ca9885a6fc2ecb0"
-  integrity sha512-DNLJsfMqJ3dvR/Ff0S1Jjv33MlNyKewkG6i2GJWULGLfHeu6ry4W8g2lYSCAHymAy2+JYgk+WXntow1rCxiuiA==
+npm-check-updates@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-3.1.4.tgz#651c1be45e50227aaa02fe97413ecffd4f61b83c"
+  integrity sha512-kiz2Z+Wn5J1JyIZGTcCRLCUVwO+C1l0Mj6c7fKDlXRUxSHOEoUUuQsj+fPLU1htuNNeL7gbM1KbvE1SIGLOgvA==
   dependencies:
     bluebird "^3.5.3"
     chalk "^2.4.2"
@@ -5819,6 +5819,7 @@ npm-check-updates@^3.1.2:
     progress "^2.0.3"
     prompts "^2.0.4"
     rc-config-loader "^2.0.2"
+    registry-url "^5.0.0"
     requireg "^0.2.1"
     semver "^5.6.0"
     semver-utils "^1.1.4"
@@ -6864,6 +6865,14 @@ postcss-selector-parser@^6.0.0:
     cssesc "^3.0.0"
     indexes-of "^1.0.1"
     uniq "^1.0.1"
+
+postcss-sorting@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-sorting/-/postcss-sorting-4.1.0.tgz#a107f0bf3852977fa64e4442bc340c88d5aacdb3"
+  integrity sha512-r4T2oQd1giURJdHQ/RMb72dKZCuLOdWx2B/XhXN1Y1ZdnwXsKH896Qz6vD4tFy9xSjpKNYhlZoJmWyhH/7JUQw==
+  dependencies:
+    lodash "^4.17.4"
+    postcss "^7.0.0"
 
 postcss-svgo@^4.0.2:
   version "4.0.2"
@@ -8556,6 +8565,15 @@ stylelint-declaration-use-variable@^1.7.0:
   dependencies:
     stylelint "^9.1.1"
 
+stylelint-order@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-2.1.0.tgz#fc64625c26b93755773bd67c1203381194aded04"
+  integrity sha512-8oX4Y3Bh4e3s9e7nnYJkeyYg5yx8Fa7wwTNXJcabPrNqavK9FqZ3zNJFvCJFn+v5qTngvVWsh33DpOP2BdroBg==
+  dependencies:
+    lodash "^4.17.10"
+    postcss "^7.0.2"
+    postcss-sorting "^4.1.0"
+
 stylelint-value-no-unknown-custom-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-value-no-unknown-custom-properties/-/stylelint-value-no-unknown-custom-properties-2.0.0.tgz#0c2559061a5bda76939e7fece511c11d7faf62ed"
@@ -8708,20 +8726,20 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svg-spritemap-webpack-plugin@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/svg-spritemap-webpack-plugin/-/svg-spritemap-webpack-plugin-3.2.2.tgz#8b341b2c11a2400ff60d17dcc09ecab9fe0d25ae"
-  integrity sha512-SF3OarJbNpMIFS8Y3reJZ0azt03AqiYuBKsYRdcAG5ywz6+Q4Oo2HRLUM+GEaxZnGCrwBkSGZWKTDpUGeevUxw==
+svg-spritemap-webpack-plugin@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/svg-spritemap-webpack-plugin/-/svg-spritemap-webpack-plugin-3.3.0.tgz#3ed13f515357db0518aeae723c881a70509689a5"
+  integrity sha512-d31kcaIkrX0Wi5lVlB4LEdJB1DkSfTV4IKMnC79++yCgheh1ztsAaZIov++sLby2csZfUs5HaOCbgUO7caN88A==
   dependencies:
     glob "^7.1.3"
     html4-id "^1.0.0"
-    joi "^14.3.0"
-    loader-utils "^1.1.0"
-    mini-svg-data-uri "^1.0.2"
+    joi "^14.3.1"
+    loader-utils "^1.2.3"
+    mini-svg-data-uri "^1.0.3"
     mkdirp "^0.5.1"
     svg4everybody "^2.1.9"
-    svgo "^1.1.1"
-    webpack-merge "^4.1.4"
+    svgo "^1.2.0"
+    webpack-merge "^4.2.1"
     webpack-sources "^1.3.0"
     xmldom "^0.1.27"
 
@@ -8735,7 +8753,7 @@ svg4everybody@^2.1.9:
   resolved "https://registry.yarnpkg.com/svg4everybody/-/svg4everybody-2.1.9.tgz#5bd9f6defc133859a044646d4743fabc28db7e2d"
   integrity sha1-W9n23vwTOFmgRGRtR0P6vCjbfi0=
 
-svgo@^1.0.0, svgo@^1.1.1:
+svgo@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.2.0.tgz#305a8fc0f4f9710828c65039bb93d5793225ffc3"
   integrity sha512-xBfxJxfk4UeVN8asec9jNxHiv3UAMv/ujwBWGYvQhhMb2u3YTGKkiybPcLFDLq7GLLWE9wa73e0/m8L5nTzQbw==
@@ -8748,6 +8766,26 @@ svgo@^1.0.0, svgo@^1.1.1:
     css-url-regex "^1.1.0"
     csso "^3.5.1"
     js-yaml "^3.12.0"
+    mkdirp "~0.5.1"
+    object.values "^1.1.0"
+    sax "~1.2.4"
+    stable "^0.1.8"
+    unquote "~1.1.1"
+    util.promisify "~1.0.0"
+
+svgo@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.2.1.tgz#3fedde75a4016193e1c2608b5fdef6f3e4a9fd99"
+  integrity sha512-Y1+LyT4/y1ms4/0yxPMSlvx6dIbgklE9w8CIOnfeoFGB74MEkq8inSfEr6NhocTaFbyYp0a1dvNgRKGRmEBlzA==
+  dependencies:
+    chalk "^2.4.1"
+    coa "^2.0.2"
+    css-select "^2.0.0"
+    css-select-base-adapter "^0.1.1"
+    css-tree "1.0.0-alpha.28"
+    css-url-regex "^1.1.0"
+    csso "^3.5.1"
+    js-yaml "^3.13.0"
     mkdirp "~0.5.1"
     object.values "^1.1.0"
     sax "~1.2.4"
@@ -9067,10 +9105,10 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-twig-html-loader@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/twig-html-loader/-/twig-html-loader-0.1.5.tgz#90bc13c8661fa2040984c3b6852e67224388f41e"
-  integrity sha512-bGgoGLOKYtbtPUb+1A0gzajxlatV5jIQyCudaKusUmfARYhqTbQukH7CVYEDQ1pCN/KwkDbcOxNMAZi4Zw7StQ==
+twig-html-loader@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/twig-html-loader/-/twig-html-loader-0.1.6.tgz#631fa594d55a4ca81a1ab60b936d37cb58411bb4"
+  integrity sha512-Xlhn+tOcAWRs7NYHwdezoJL2h00thkiRAxVIZBlUmEu4frQrxwI/Q/ZXkeTHIv0Ibk1CAi/dp12zAW4qVybiFw==
   dependencies:
     loader-utils "^1.1.0"
     twig "^1.12.0"
@@ -9490,10 +9528,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-webpack-bundle-analyzer@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/webpack-bundle-analyzer/-/webpack-bundle-analyzer-3.1.0.tgz#2f19cbb87bb6d4f3cb4e59cb67c837bd9436e89d"
-  integrity sha512-nyDyWEs7C6DZlgvu1pR1zzJfIWSiGPbtaByZr8q+Fd2xp70FuM/8ngCJzj3Er1TYRLSFmp1F1OInbEm4DZH8NA==
+webpack-bundle-analyzer@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-bundle-analyzer/-/webpack-bundle-analyzer-3.2.0.tgz#0630d298e88511d036d7c823705d7b852593d5c4"
+  integrity sha512-F6bwrg5TBb9HsHZCltH1L5F091ELQ+/i67MEH7jWkYRvVp53eONNneGaIXSdOQUiXUyd3RnkITWRfWvSVQGnZQ==
   dependencies:
     acorn "^6.0.7"
     acorn-walk "^6.1.1"
@@ -9526,16 +9564,16 @@ webpack-cli@^3.3.0:
     v8-compile-cache "^2.0.2"
     yargs "^12.0.5"
 
-webpack-dashboard@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/webpack-dashboard/-/webpack-dashboard-3.0.0.tgz#14b2374841efd9b28d0368f07a38bc1af43970e1"
-  integrity sha512-OtqccZJLR9CPbn86p6iwXWrseh944AkNj0AzrNvC7j4x+yHjmX1dlDpyo1f35GwY6F9eBWpMffUoGeWrFjLNUA==
+webpack-dashboard@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/webpack-dashboard/-/webpack-dashboard-3.0.2.tgz#85fc1284e60fdeab81cc15e642ea0fbf95cd6051"
+  integrity sha512-Y7EvmVmVi/XdLMXITrMaIldr8rUj2pSAWQX20yCkaX5NzomR1k+fnsUKVgexF8H9LYBfC1/L2wFzhClUbKKWow==
   dependencies:
     commander "^2.15.1"
     cross-spawn "^6.0.5"
     filesize "^3.6.1"
-    handlebars "^4.0.11"
-    inspectpack "^4.0.0"
+    handlebars "^4.1.0"
+    inspectpack "^4.2.1"
     most "^1.7.3"
     neo-blessed "^0.2.0"
     socket.io "^2.1.1"
@@ -9600,7 +9638,7 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-merge@^4.1.4, webpack-merge@^4.2.1:
+webpack-merge@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.2.1.tgz#5e923cf802ea2ace4fd5af1d3247368a633489b4"
   integrity sha512-4p8WQyS98bUJcCvFMbdGZyZmsKuWjWVnVHnAS3FFg0HDaRVrPbkivx2RYCre8UiemD67RsiFFLfn4JhLAin8Vw==

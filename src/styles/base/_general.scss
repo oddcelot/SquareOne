@@ -44,9 +44,9 @@ main {
 }
 
 a {
-  text-decoration: none;
   color: var(--color-brand);
   position: relative;
+  text-decoration: none;
   transition: $base-timing;
 
   > * {
@@ -65,8 +65,8 @@ p {
 }
 
 img {
-  width: auto;
   max-width: 100%;
+  width: auto;
 }
 
 figure {
